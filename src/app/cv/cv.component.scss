@@ -2,6 +2,8 @@
 
 .container {
   h1 {
+    background-color: var(--bgColor);
+    color: var(--text);
     text-align: center;
   }
 }

@@ -1,17 +1,31 @@
-:root{
---textPrimary: #121212;
---textSecondary: #454545;
---textLight:#f5faff;
---bgPrimary: #2a2d37;
---bgSecondary: #1b1f27;
---accentColor1: #dda2f6;
---accentColor2: #7fb3e1;
---accentColor3: #8af1ea;
---transitionSpeed: 300ms;
+.light {
+  --bgColor: #f8f8f8;
+  --text: #121212;
+  --primaryColor: rgb(42, 45, 55);
+  --secondaryColor: #1b1f27;
+  --accentColor1: #dda2f6;
+  --accentColor2: #7fb3e1;
+  --accentColor3: #8af1ea;
+  --transitionSpeed: 300ms;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+.dark {
+  --bgColor: #0f1216;
+  --text: #f5faff;
+  /*
+    --primaryColor: rgb(42, 45, 55);
+  --secondaryColor: #1b1f27;
+  */
+  --primaryColor: #1b1f27;
+  --secondaryColor: #2a2d37;
+  --accentColor1: #8af1ea;
+  --accentColor2: #7fb3e1;
+  --accentColor3: #dda2f6;
+  --transitionSpeed: 300ms;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 @media only screen and (min-width: 600px) {
-  .container{
+  .container {
     margin-left: 5rem;
   }
 }
-
