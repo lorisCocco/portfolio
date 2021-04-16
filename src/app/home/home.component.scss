@@ -1,0 +1,9 @@
+@import "../../styles.scss";
+.container {
+  color: $textPrimary;
+  padding: .75rem;
+  margin-left: 5rem;
+  p {
+    color: $textSecondary;
+  }
+}
