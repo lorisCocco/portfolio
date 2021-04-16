@@ -1,11 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$textPrimary: #121212;
-$textSecondary: #454545;
-$bgPrimary: #232323;
-$bgSecondary: #181818;
-$accentColor1: #dca1f5;
-$accentColor2: #95BA9F;
-$accentColor3: #CCFFDA;
+@import "var.scss";
 * {
   margin: 0;
   padding: 0;

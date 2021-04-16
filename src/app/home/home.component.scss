@@ -1,9 +1,109 @@
-@import "../../styles.scss";
+@import "../../var.scss";
 .container {
   color: $textPrimary;
-  padding: .75rem;
-  margin-left: 5rem;
+  padding: 0.25rem;
+  .quickPresentation {
+    .glitch {
+      color: $textPrimary;
+      position: relative;
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      animation: glitch 500ms infinite;
+      span {
+        font-size: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: $textSecondary;
+    }
+    padding-bottom: 1rem;
+  }
   p {
     color: $textSecondary;
   }
+  .iconholder{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+  .icon{
+    display: block;
+    max-width: 7rem;
+    max-height: 5rem;
+  }
 }
+@media only screen and (min-width: 600px) {
+  .quickPresentation {
+    h1,h2{
+      width: fit-content;
+    }
+    width: fit-content;
+    margin: auto;
+    margin-top: 30vh;
+  }
+  p{
+    width: 90%;
+    margin: auto;
+  }
+}
+.glitch span:first-of-type {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.015em, -0.025em);
+  opacity: 0.8;
+}
+.glitch span:last-of-type {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+/*@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}*/
