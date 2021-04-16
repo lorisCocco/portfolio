@@ -4,13 +4,14 @@
   background-color: var(--bgColor);
   color: var(--text);
   padding: 1rem;
+  overflow: hidden;
   min-height: 100vh;
   h1 {
     width: 90%;
     text-transform: uppercase;
     text-align: center;
   }
-  h2 {
+  h2{
     padding: 1rem 0;
     text-decoration: underline solid var(--accentColor3);
   }
@@ -36,22 +37,19 @@
   .resume {
     line-height: 2.5ch;
   }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1200px) {
     .resume {
-      padding: 3rem;
-      @media screen and(min-width:1200px) {
-        padding: 5rem 12rem;
-      }
+      padding: 5rem 12rem;
       display: flex;
       justify-content: space-between;
       .exp {
         padding-bottom: 1.5rem;
       }
       .leftcolumn {
-        width: 40%;
+        width: 35%;
       }
       .rightcolumn {
-        width: 55%;
+        width: 45%;
       }
     }
   }
@@ -66,15 +64,9 @@ h3.nopb {
     "a  b  c  d"
     "j  k  l  e"
     "i  h  g  f";
-  grid-template-rows: repeat(4, 4.5rem);
-  grid-template-columns: repeat(4, 4.5rem);
+  grid-template-rows: repeat(4, 5rem);
+  grid-template-columns: repeat(4, 5rem);
   --stagger-delay: 100ms;
-}
-@media screen and (min-width: 600px) {
-  .animated-grid {
-    grid-template-rows: repeat(4, 6rem);
-    grid-template-columns: repeat(4, 6rem);
-  }
 }
 @keyframes cardEntrance {
   from {
@@ -89,8 +81,8 @@ h3.nopb {
   }
 }
 .card {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -98,15 +90,16 @@ h3.nopb {
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
 }
-.card img {
-  max-width: 3.5rem !important;
-  max-height: 3.5rem !important;
-}
-@media screen and (min-width: 600px) {
-  .card img {
-    max-width: 5.5rem !important;
-    max-height: 5.5rem !important;
+@media screen and(max-width:700px) {
+  .card{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    .card img{
+      max-width: 2.5rem !important;
+      max-height: 2.5rem !important;
+    }
   }
+  
 }
 .card:nth-child(1) {
   grid-area: a;
