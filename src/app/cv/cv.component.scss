@@ -37,9 +37,15 @@
   .resume {
     line-height: 2.5ch;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 950px) {
     .resume {
-      padding: 5rem 12rem;
+      padding: 5rem;
+      @media screen and (min-width:1200px) {
+        padding: 5rem 10rem;
+      }
+      @media screen and (min-width:1600px) {
+        padding: 5rem 14rem;
+      }
       display: flex;
       justify-content: space-between;
       .exp {
