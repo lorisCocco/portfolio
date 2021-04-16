@@ -7,17 +7,16 @@
   background-size: cover;
 }
 .container {
-  background-color: rgba(42,45,55, 0.8);
+  background-color: rgba(42, 45, 55, 0.8);
   height: 100vh;
   opacity: 1;
   font-size: 1.1rem;
   padding: 0.25rem;
-  color: $textLight;
+  color: var(--textLight);
   .quickPresentation {
     padding: 2rem;
     .glitch {
       position: relative;
-      font-size: 4rem;
       text-transform: uppercase;
       text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
         0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
@@ -29,13 +28,10 @@
         left: 0;
       }
     }
-    h2 {
-      font-size: 1.8rem;
-    }
     padding-bottom: 1rem;
   }
   p {
-    padding: 2rem;
+    padding: 0 2rem;
   }
   .stack {
     padding: 2rem;
@@ -48,7 +44,7 @@
   .quickPresentation {
     width: 50%;
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 25vh;
   }
   p {
     font-size: 1.5rem;
@@ -57,7 +53,8 @@
     margin: auto;
   }
   .stack {
-    h2,h3,ul,li{
+    ul,
+    li {
       font-size: 1.5rem;
     }
     width: 50%;

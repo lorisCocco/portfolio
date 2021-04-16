@@ -2,8 +2,9 @@
 nav {
   z-index: 10;
   position: fixed;
-  background-color: $bgPrimary;
-  transition: all $transitionSpeed ease;
+  background-color: var(--bgPrimary);
+  transition: all var(--transitionSpeed) ease;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, .4);
   ul {
     list-style: none;
     padding: 0;
@@ -21,7 +22,7 @@ nav {
         display: flex;
         align-items: center;
         height: 5rem;
-        color: $accentColor3;
+        color: var(--accentColor3);
         text-decoration: none;
         font-weight: bold;
         letter-spacing: 0.2ch;
@@ -30,7 +31,7 @@ nav {
           min-width: 2rem;
           width: 2rem;
           margin: 0 1.5rem;
-          fill: $accentColor3;
+          fill: var(--accentColor3);
         }
         .link-text {
           display: none;
@@ -43,7 +44,7 @@ nav {
 
 nav a {
   filter: grayscale(100%) opacity(0.7);
-  transition: $transitionSpeed;
+  transition: var(--transitionSpeed);
 }
 nav:hover {
   .logo svg {
@@ -59,14 +60,14 @@ nav:hover {
   }
   a:hover {
     filter: grayscale(0) opacity(1);
-    background-color: $bgSecondary;
-    color: $accentColor3;
+    background-color: var(--bgSecondary);
+    color: var(--accentColor3);
   }
 }
 .logo {
   svg {
     transform: rotate(0deg);
-    transition: transform $transitionSpeed;
+    transition: transform var(--transitionSpeed);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -89,7 +90,7 @@ nav:hover {
       }
     }
   }
-  nav ul li:last-child {
+  .toHide {
     display:none;
   }
 }

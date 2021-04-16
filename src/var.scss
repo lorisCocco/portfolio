@@ -1,13 +1,14 @@
-$textPrimary: #121212;
-$textSecondary: #454545;
-$textLight:#f5faff;
-$bgPrimary: #2a2d37;
-$bgSecondary: #1b1f27;
-$accentColor1: #dda2f6;
-$accentColor2: #7fb3e1;
-$accentColor3: #8af1ea;
-$transitionSpeed: 300ms;
-
+:root{
+--textPrimary: #121212;
+--textSecondary: #454545;
+--textLight:#f5faff;
+--bgPrimary: #2a2d37;
+--bgSecondary: #1b1f27;
+--accentColor1: #dda2f6;
+--accentColor2: #7fb3e1;
+--accentColor3: #8af1ea;
+--transitionSpeed: 300ms;
+}
 @media only screen and (min-width: 600px) {
   .container{
     margin-left: 5rem;
