@@ -23,7 +23,9 @@ nav {
         height: 5rem;
         color: $accentColor3;
         text-decoration: none;
-        text-transform: capitalize;
+        font-weight: bold;
+        letter-spacing: 0.2ch;
+        text-transform: uppercase;
         svg {
           min-width: 2rem;
           width: 2rem;
@@ -86,6 +88,9 @@ nav:hover {
         }
       }
     }
+  }
+  nav ul li:last-child {
+    display:none;
   }
 }
 @media only screen and (min-width: 600px) {
