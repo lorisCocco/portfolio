@@ -1,1 +1,1 @@
-Le code pour mon portfolio, j’ai conscience qu’il n’est pas très propre et qu’il n’utilise pas toutes les fonctionnalité d’angular mais je l’ai développer rapidement afin d’avoir une visibilité en ligne, et par la suite je le recoderai plus proprement.
+
